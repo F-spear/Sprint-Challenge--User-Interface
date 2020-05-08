@@ -81,8 +81,8 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
@@ -91,7 +91,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 80rem;
     margin: 0 auto;
 }
 
@@ -99,18 +99,18 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 2.0rem;
     border-bottom: 1px dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2rem;  
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     border-bottom: 1px dashed black;
 }
 
@@ -127,9 +127,9 @@ p {
 
 .middle-content .boxes .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
     width: 12.5%;
-    height: 100px;
+    height: 10rem;
     
-    margin: 20px 2.5%;
+    margin: 2rem 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -168,7 +168,7 @@ p {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 2rem;
     justify-content: space-around;
 }
 
@@ -190,11 +190,50 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2rem 2%;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+@media(max-width:800px){
+    #home{
+        width: 100vw;
+    }
+    #home nav{
+        max-width: 90vw;
+        display: flex;
+        align-items: baseline;
+        }
+        #home nav .logo, .links{
+         display: flex;
+         justify-content: space-evenly;
+         width: 100%;
+         }
+    
+    .main{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    footer {
+        width: 90vw;
+        
+    }
+    footer nav {
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 2%;
+        font-size: 1.4rem;
+    }
+    footer nav a {
+        color: white;
+        text-decoration: none;
+    }
+
 }
